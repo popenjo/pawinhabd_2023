@@ -43,3 +43,80 @@ header .m_nav_menu ul li {
 header .m_nav_menu ul li a {
     font-size:1.333rem;
 }
+/* main */
+main {}
+/* main-1 swiper-slide */
+/* .swiper 플러그인 의 정식명칭 클래스는 
+웹페이지 1장에서 swiper가 2개 이상 등어올 경우
+디자인이 강제로 중복될 수 잇으므로 개별 아이디 및 클래스를 
+사용해서 선택자를 만들고 디자인한다. */
+main #pawin_slide {
+    width:1160px; height:650px;
+    background:green;
+}
+main #pawin_slide .swiper-wrapper {}
+main #pawin_slide .swiper-wrapper .swiper-slide {}
+main #pawin_slide .swiper-wrapper .slide1 {
+    background:url(https://picsum.photos/id/1/1160);
+}
+main #pawin_slide .swiper-wrapper .slide2 {
+    background:url(https://picsum.photos/id/110/1160)
+}
+main #pawin_slide .swiper-wrapper .slide3 {
+    background:url(https://picsum.photos/id/704/1160)
+}
+main #pawin_slide .swiper-wrapper .slide4 {
+    background:url(https://picsum.photos/id/320/1160)
+}
+main #pawin_slide .swiper-button-prev, 
+main #pawin_slide .swiper-button-next {
+    width:40px; height:40px;
+}
+/* ------------------------------------- */
+main #pawin_slide .swiper-button-prev {
+    animation:a 1s linear alternate-reverse infinite;
+    transition:all 0.5s;
+    background:url(../images/left.png) no-repeat;
+}
+main #pawin_slide .swiper-button-next {
+    animation:b 1s linear alternate-reverse infinite;
+    transition:all 0.5s;
+    background:url(../images/right.png) no-repeat;
+}
+main #pawin_slide .swiper-button-prev::after,
+main #pawin_slide .swiper-button-next::after {display:none;}
+@keyframes a {
+    0% {transform:translateX(0);}
+    100% {transform:translateX(10px);}
+}
+@keyframes b {
+    0% {transform:translateX(-10px);}
+    100% {transform:translateX(0);}
+}
+main #swiper_all {
+    width:1160px; height:650px;
+    background:yellow;
+}
+/* ------------------------------------------- */
+main #swiper_all .swiper-wrapper {}
+main #swiper_all .swiper-wrapper .s1 {
+    background:url(https://picsum.photos/id/60/1160)
+}
+main #swiper_all .swiper-wrapper .s2 {
+    background:url(https://picsum.photos/id/360/1160)
+}
+main #swiper_all .swiper-wrapper .s3 {
+    background:url(https://picsum.photos/id/800/1160)
+}
+main #swiper_all .swiper-button-prev {
+    background:url(../images/left1.png);
+}
+main #swiper_all .swiper-button-next {
+    background:url(../images/Up\ arrow.png);
+}
+main #swiper_all .swiper-button-prev,
+main #swiper_all .swiper-button-next {
+    width:40px; height:40px;
+}
+main #swiper_all .swiper-button-prev::after,
+main #swiper_all .swiper-button-next::after {display:none;}

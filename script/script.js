@@ -22,3 +22,33 @@ m_nav.addEventListener('click',function(){
 close.addEventListener('click',function(){
     m_menu.style.display = 'none';
 })
+
+// main-swiper-slide
+// const 변수 이름 = new Swiper('적용대상');
+// const 변수 이름 = new Swiper('적용대상',{속성:값, 속성:값});
+const pawin_slide = new Swiper('#pawin_slide',{
+    autoplay:{
+        delay:1000,
+        disableOnInteraction:false //버튼 클릭 후 자동 재생유지
+    }, 
+    loop:true,
+    effect:'fade',
+    navigation: {
+        nextEl: '#pawin_slide .swiper-button-next',
+        prevEl: '#pawin_slide .swiper-button-prev',
+    },
+    // direction:'vertical'
+})
+const swiper_all = new Swiper('#swiper_all',{
+    autoplay:{
+        delay:2000
+    },
+    loop:true,
+    navigation: { //dlwjs, 이전, 다음 내비게이션 연결
+        //next,prev 객체 연결 시 부모를 안적으면
+        //body 안에 있는 모든 swiper-next,prev를 인식하기 때문에
+        //개별인식가능한 부모이름을 반드시 앞에 먼저 작성한다.
+        nextEl: '#swiper_all .swiper-button-next',
+        prevEl: '#swiper_all .swiper-button-prev',
+    },
+})
