@@ -5,6 +5,7 @@ media max-width의 첫번째 조건 값은 웹사이트
 width값 기준으로 설정해서 자연스로운 반응형 웹을 설계한다. */
 @media screen and (max-width:1160px) {
     header {width:calc(100% - 30px);}
+    /* main #pawin-slide {width:calc(100% - 30px);} */
 }/* 1160 end */
 @media screen and (max-width:900px) {
     header nav ul {display:none;}
@@ -13,6 +14,7 @@ width값 기준으로 설정해서 자연스로운 반응형 웹을 설계한다
         background:lawngreen; display:flex; flex-flow:column nowrap;
         justify-content: space-between;
     }
+}
     header nav .m_nav span {
         width:100%; height:7px;
         border-radius:5px;
@@ -42,4 +44,9 @@ width값 기준으로 설정해서 자연스로운 반응형 웹을 설계한다
     header .m_nav_menu ul li a {
         font-size:1.333rem;
     }
+    /* pawin-hand */
+    /* 반응형웹의 슬라이드는 높이 고정 슬라이드의 경우 데스크탑, 모바일용의 이미지를 따로 제작하고 */
+    /* @media 모바일 조건에서 m 이미지로 변경하는 경로를 작성한다. */
+    main #pawin_slide .swiper-wrapper .slide1 {
+        background:url(../images/pawin_slide_m.jpg) center;
 }/* 900 end */

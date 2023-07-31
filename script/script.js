@@ -28,11 +28,12 @@ close.addEventListener('click',function(){
 // const 변수 이름 = new Swiper('적용대상',{속성:값, 속성:값});
 const pawin_slide = new Swiper('#pawin_slide',{
     autoplay:{
-        delay:1000,
+        delay:10000,
         disableOnInteraction:false //버튼 클릭 후 자동 재생유지
     }, 
     loop:true,
-    effect:'fade',
+    direction:'horizontal',
+    // effect:'fade',
     navigation: {
         nextEl: '#pawin_slide .swiper-button-next',
         prevEl: '#pawin_slide .swiper-button-prev',
@@ -41,7 +42,7 @@ const pawin_slide = new Swiper('#pawin_slide',{
 })
 const swiper_all = new Swiper('#swiper_all',{
     autoplay:{
-        delay:2000
+        delay:10000
     },
     loop:true,
     navigation: { //dlwjs, 이전, 다음 내비게이션 연결
