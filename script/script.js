@@ -28,7 +28,7 @@ close.addEventListener('click',function(){
 // const 변수 이름 = new Swiper('적용대상',{속성:값, 속성:값});
 const pawin_slide = new Swiper('#pawin_slide',{
     autoplay:{
-        delay:10000,
+        delay:1000000000,
         disableOnInteraction:false //버튼 클릭 후 자동 재생유지
     }, 
     loop:true,

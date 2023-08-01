@@ -62,7 +62,7 @@ main #pawin_slide .swiper-wrapper .slide1 {
     background:url(../images/pawin_slide_desktop.jpg) center;
 }
 main #pawin_slide .swiper-wrapper .slide2 {
-    background:url(../images/pawin_slide_desktop.jpg)
+    background:url(../images/pawin_slide_desktop.jpg) no-repeat center;
 }
 main #pawin_slide .swiper-wrapper .slide3 {
     background:url(https://picsum.photos/id/704/1160)
