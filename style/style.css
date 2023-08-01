@@ -62,7 +62,7 @@ main #pawin_slide .swiper-wrapper .slide1 {
     background:url(../images/pawin_slide_desktop.jpg) center;
 }
 main #pawin_slide .swiper-wrapper .slide2 {
-    background:url(https://picsum.photos/id/110/1160)
+    background:url(../images/pawin_slide_desktop.jpg)
 }
 main #pawin_slide .swiper-wrapper .slide3 {
     background:url(https://picsum.photos/id/704/1160)
@@ -76,25 +76,25 @@ main #pawin_slide .swiper-button-next {
 }
 /* ------------------------------------- */
 main #pawin_slide .swiper-button-prev {
-    animation:a 1s linear alternate-reverse infinite;
-    transition:all 0.5s;
+    /* animation:a 1s linear alternate-reverse infinite;
+    transition:all 0.5s; */
     background:url(../images/left.png) no-repeat;
 }
 main #pawin_slide .swiper-button-next {
-    animation:b 1s linear alternate-reverse infinite;
-    transition:all 0.5s;
+    /* animation:b 1s linear alternate-reverse infinite;
+    transition:all 0.5s; */
     background:url(../images/right.png) no-repeat;
 }
 main #pawin_slide .swiper-button-prev::after,
 main #pawin_slide .swiper-button-next::after {display:none;}
-@keyframes a {
+/* @keyframes a {
     0% {transform:translateX(0);}
     100% {transform:translateX(10px);}
 }
 @keyframes b {
     0% {transform:translateX(-10px);}
     100% {transform:translateX(0);}
-}
+} */
 main #swiper_all {
     width:1160px; height:650px;
     background:yellow;
@@ -126,3 +126,23 @@ main #swiper_all .swiper-button-next {
 }
 main #swiper_all .swiper-button-prev::after,
 main #swiper_all .swiper-button-next::after {display:none;}
+/* pawin-slide2 */
+main #pawin_slide2 {
+    max-width:1160px; margin:0 auto;
+    width:calc(100% - 30px);
+    /* silde대상으로 img태그를 삽입한 경우 높이값은
+    이미지 태그크기만큼 자동으로 설정되므로 별도의
+    높이값은 작성할 필요가 없다. */
+}
+main #pawin_silde2 .swiper-wrapper .swiper-slide1 img {width:100%;}
+/* 입양정보 slide */
+main .dog_info {
+    padding:100px 0 50px;
+    font-size: 2rem; text-align:center;
+}
+main #dog_info_slide {
+    background:aqua;
+    max-width:1160px; margin:0 auto;
+    width:calc(100% - 30px);
+}
+main #dog_info_slide .swiper-wrapper .swiper-slide img {width:100%;}

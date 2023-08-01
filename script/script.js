@@ -53,3 +53,24 @@ const swiper_all = new Swiper('#swiper_all',{
         prevEl: '#swiper_all .swiper-button-prev',
     },
 })
+// pawin-slide 2
+const pawin_slide2 = new Swiper('#pawin_slide2',{
+    autoplay:{delay:1000},
+    loop:true,
+    effect:'fade',
+})
+//입양정보 slide
+const dog_info_slide = new Swiper('#dog_info_slide',{
+    slidesPerView:'auto',//breakpoints 옵션추가시 'auto' //한번에 보이는 슬라이드 개수
+    spaceBetween:20, //슬라이드 사이 여백
+    autoplay:{deley:1000},
+    loop:true,
+    // swiper-slide 반응형웹 옵션
+    breakpoints:{
+        //해상도:{옵션:값}
+        //해상도 순서는 작은 해상도 -> 큰 해상도 순으로 작성.
+        700:{slidesPerview:2},
+        900:{slidesPerView:3},
+        1160:{slidesPerView:4}//1160이상일 경우 슬라이드 4개 표시 (해상도는 페이지 제작마다 바뀔 수 있슴)
+    },
+})
